@@ -1,0 +1,447 @@
+@font-face {
+    font-family: futura;
+    src: url("Futura-Bold.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F7F7F7;
+}
+
+*::selection{
+    color: white;
+    background-color: black;
+}
+
+.nav{
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav .nav-right{
+    height: 50%;
+    display: flex;
+    font-size: 0.75rem;
+    justify-content: space-between;
+    padding: 0.45vw;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+
+}
+
+.nav .nav-icons{
+    padding: 10px;
+
+}
+
+.nav .nav-links{
+    padding: 10px;
+}
+
+.nav-right .nav-icons i{
+    margin: 0 1.4vw;
+    color: #000;
+    font-size: 1rem;
+    
+}
+
+.nav-right .nav-links a{
+    margin: 0 1.4vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.nav-right .nav-links a:hover{
+    text-decoration: underline;
+       
+}
+
+
+.cursor{
+    height: 180px;
+    width: 180px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+}
+
+.firstpage{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 1vw;
+    padding-top: 20vh;
+    background-color: #F7F7F7;
+}
+
+.firstpage h1{
+    font-size: 15.2vw;
+    font-family: futura;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 14vw;
+    letter-spacing: -10px;;
+}
+
+.video-container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.video-container .play{
+    padding: 3vw 2.2vw;
+    border-radius: 50%;
+    background-color: black;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    font-family: futura;
+    position: fixed;
+    opacity: 0;
+    scale: 0;
+
+}
+
+.smartline{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5vh;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+}
+
+
+.secondpage{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    padding: 3vw 1vw;
+    justify-content: space-between;
+    }
+
+.secondpage .elem{
+    max-height: 100%;
+    width: 32.5%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+}
+
+.secondpage .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+
+}
+ .elem .pocket{
+    height: 55px;
+    width: 70%;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    
+
+}
+.elem .pocket p{
+    padding: 20px;
+}
+
+#elem1 .pocket{
+   background-color: #E5F0D6; 
+}
+
+#elem2 .pocket{
+    background-color: #F5DFCF;
+}
+
+#elem3 .pocket{
+    background-color: #FFFFFF;
+}
+
+.elem .pocket:hover{
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:first baseline;
+}
+
+.thirdpage{
+    margin: 0 1vw;
+}
+
+.content{
+    height: 40vh;
+    width: 100%;
+}
+
+.content .p1{
+    margin-left: 1vw;
+    margin-right: 14vw;
+    font-size: 3.5vw;
+    font-family: futura;
+    padding-bottom: 3vw;
+    width: 50%;
+    float: inline-start;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-content{
+    
+    margin-right: 8vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.text-content a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: small;
+    color: #000;
+}
+
+.text-content a:hover{
+    text-decoration: underline;
+}
+
+.products{
+    min-height: 120vh;
+    margin-top: 8vh;
+    margin-bottom: 15vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    gap: 6vw;
+    row-gap: 10vw;
+}
+
+.child{
+    height: 70vh;
+    width: 40vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: small;
+    color: #000;
+    gap: 1vw;
+}
+
+.child img{
+    height: 100%;
+    
+}
+
+.fourthpage .thankyou{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.fourthpage .thankyou .big-text{
+    margin:0 0 4vw 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-family: futura;
+    width: 80%;
+    
+}
+
+.fourthpage .thankyou button{
+    width: 300px;
+    height: 60px;
+    border-radius: 50px;
+    color: #F7F7F7;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.fourthpage .thankyou p{
+    margin-bottom: 20vh;
+    text-align: center;
+}
+
+.footer{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 2vh;
+}
+
+.footer-part1{
+    margin: 20px 0 80px 0;
+    display: flex;
+    justify-content: space-between
+}
+
+
+.footer ul li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.78rem;
+    
+}
+
+
+.noicetext{
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+
+}
+
+.companyicon .iconimage{
+    padding-bottom: 100px;
+    text-align: center;
+
+
+}
+.companyicon .belowicon{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer .endtext{
+    margin: 0 15vw 2vw 15vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95rem;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+
+
+@media (max-width:600px) {
+    .firstpage{
+        min-height: 70vh;
+        padding: 0 3vw;
+        padding-top: 45vw;
+    }
+
+    .firstpage h1{
+        font-size: 15.5vw;
+        letter-spacing: -5px;;
+    }
+
+    .video-container{
+        height: 25vh;
+        width: 100%;
+        margin-top: 3vw;
+    }
+
+    .video-container .play{
+        padding: 9.5vw 7.2vw;
+        color: aliceblue;
+        top: 50%;
+        left: 50%;
+        font-size: 4.5vw;
+        position: absolute;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    .secondpage{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 5vw 3vw;
+        justify-content: space-between;
+    }
+    
+    .secondpage .elem{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden; 
+    }
+    
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .content .p1{
+        margin: 0;
+        font-size: 6vw;
+        font-family: futura;
+        padding-bottom: 2vw;
+        width: 100%;
+    }
+    
+    .text-content{
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .products{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer .endtext{
+        margin: 0 10vw 0px 10vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.95rem;
+        text-align: center;
+    }
+}
